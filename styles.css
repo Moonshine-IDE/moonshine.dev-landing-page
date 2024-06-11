@@ -1,0 +1,263 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: rgb(8, 47, 73);
+  background: linear-gradient(135deg, #25263c 0%, #13131d 100%);
+  color: #fff;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px; /* Default padding for the smallest breakpoint */
+}
+
+/* Breakpoints for container */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    padding: 0 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+}
+
+/* Grid System */
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 15px;
+}
+
+/* Column classes */
+.col-1 {
+  grid-column: span 1;
+}
+.col-2 {
+  grid-column: span 2;
+}
+.col-3 {
+  grid-column: span 3;
+}
+.col-4 {
+  grid-column: span 4;
+}
+.col-5 {
+  grid-column: span 5;
+}
+.col-6 {
+  grid-column: span 6;
+}
+.col-7 {
+  grid-column: span 7;
+}
+.col-8 {
+  grid-column: span 8;
+}
+.col-9 {
+  grid-column: span 9;
+}
+.col-10 {
+  grid-column: span 10;
+}
+.col-11 {
+  grid-column: span 11;
+}
+.col-12 {
+  grid-column: span 12;
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  font-size: 2rem;
+  font-weight: 500;
+  border-bottom: 1px solid #555;
+  color: #f2e5a9;
+}
+
+.hero {
+  width: 100%;
+  padding: 80px 16px;
+}
+
+.hero__image-wrapper {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .hero__text-wrapper {
+    grid-column: span 12;
+  }
+
+  .hero__image-wrapper {
+    grid-column: span 12;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__text-wrapper {
+    grid-column: span 12;
+  }
+
+  .hero__image-wrapper {
+    grid-column: span 12;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__text-wrapper {
+    grid-column: span 5;
+  }
+
+  .hero__image-wrapper {
+    grid-column: span 7;
+  }
+}
+
+.hero__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #a5b4fc;
+}
+
+.hero__description {
+  font-size: 1.125rem;
+  color: #e0e7ff;
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 12px;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+/* Card class */
+.card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(171, 171, 171, 0.1);
+  color: #fff;
+  padding: 2em;
+  border-radius: 0.8em;
+
+  position: relative;
+  backdrop-filter: blur(4px);
+  border: 1px solid #555;
+}
+
+.card:hover {
+  border: 1px solid rgba(242, 229, 169, 1);
+  box-shadow: 0 0 20px 2px rgba(254, 252, 232, 0.5);
+}
+
+/* Responsive card sizes */
+.card {
+  grid-column: span 12;
+}
+
+@media (max-width: 768px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    grid-column: span 6;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    grid-column: span 3;
+  }
+}
+
+.feature__title {
+  margin: 1em 0 0 0;
+  color: #a5b4fc;
+}
+
+.feature__description {
+  color: #c7d2fe;
+  font-size: 1em;
+  line-height: 1.75em;
+  margin: 1em auto 2em auto;
+}
+
+.feature__icon {
+  width: 6em;
+  height: 6em;
+  margin: -4em auto 0 auto;
+  border-radius: 50%;
+  /* background: linear-gradient(0deg, #2563eb, #818cf8); */
+  background: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 0.5em #26293e;
+}
+
+.feature__icon img {
+  width: 90%;
+  height: 90%;
+  border-radius: inherit;
+}
+
+.feature__button {
+  align-self: center;
+  background: rgb(171, 171, 171, 0.2);
+  border: none;
+  border-radius: 3em;
+  padding: 0.8em 2em;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.card:hover button {
+  background: #f2e5a9;
+  color: #111;
+}
