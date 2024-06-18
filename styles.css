@@ -245,6 +245,10 @@ body {
   border-radius: inherit;
 }
 
+.feature h2 {
+  font-size: 1.2em;
+}
+
 .feature__button {
   font-size: 0.8em;
   align-self: center;
