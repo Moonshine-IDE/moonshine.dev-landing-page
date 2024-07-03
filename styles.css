@@ -194,6 +194,7 @@ body {
 /* Responsive card sizes */
 .card {
   grid-column: span 12;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -255,7 +256,6 @@ body {
   border: none;
   border-radius: 3em;
   padding: 0.8em 2em;
-  cursor: pointer;
   text-transform: uppercase;
   text-decoration: none; /* Remove underline from links */
   display: inline-block; /* Allow padding and dimensions to apply */
