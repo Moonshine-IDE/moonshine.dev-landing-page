@@ -281,13 +281,13 @@ em {
   color: #111;
 }
 
-/* Knowledge */
+/* section */
 
 .spacer {
   height: 50px;
 }
 
-.knowledge {
+.section {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 20px;
@@ -296,7 +296,7 @@ em {
   border-top: 1px solid #555; /* A subtle separator line at the top */
 }
 
-.knowledge__content {
+.section__content {
   display: flex;
   flex-direction: column; /* Default to column layout for small screens */
   align-items: center; /* Center align items for smaller screens */
@@ -305,13 +305,13 @@ em {
 }
 
 @media (min-width: 992px) {
-  .knowledge__content {
+  .section__content {
     flex-direction: row; /* Row layout for larger screens */
     align-items: flex-start; /* Align items to the top */
   }
 }
 
-.knowledge__text {
+.section__text {
   text-align: center;
   max-width: 800px; /* Limits width for better readability */
   margin-left: auto;
@@ -319,13 +319,13 @@ em {
 }
 
 @media (min-width: 992px) {
-  .knowledge__text {
+  .section__text {
     text-align: left;
     max-width: none; /* Remove max width restriction on larger screens */
   }
 }
 
-.knowledge__title {
+.section__title {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
@@ -333,25 +333,25 @@ em {
   padding-top: 2rem;
 }
 
-.knowledge__description {
+.section__description {
   font-size: 1.25rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   color: #e0e7ff;
 }
 
-.knowledge__link-wrapper {
+.section__link-wrapper {
   margin: 0 auto;
   text-align: center; /* Center align link on smaller screens */
 }
 
 @media (min-width: 992px) {
-  .knowledge__link-wrapper {
+  .section__link-wrapper {
     text-align: center; /* Align link to the right on larger screens */
   }
 }
 
-.knowledge__link {
+.section__link {
   font-size: 0.8em;
   align-self: center;
   border: none;
@@ -364,7 +364,7 @@ em {
   background-color: #343440;
 }
 
-.knowledge__link:hover {
+.section__link:hover {
   text-decoration: none; /* Ensure no underline on interaction states */
   outline: none; /* Text color on hover */
   font-weight: 700;
