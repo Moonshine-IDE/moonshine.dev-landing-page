@@ -110,6 +110,15 @@ em {
   color: #f2e5a9;
 }
 
+.header__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header__link:hover {
+  color: #fff;
+}
+
 .hero {
   width: 100%;
   padding: 80px 16px;
@@ -370,4 +379,127 @@ em {
   font-weight: 700;
   background-color: #f2e5a9;
   color: #13131d;
+}
+
+/* Release Notes Styles */
+.release-notes {
+  padding: 40px 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.release-notes__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #a5b4fc;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.release-notes__version {
+  background: rgba(171, 171, 171, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(4px);
+  border: 1px solid #555;
+}
+
+.release-notes__version h2 {
+  color: #f2e5a9;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.release-date {
+  font-size: 1rem;
+  color: #c7d2fe;
+  font-weight: normal;
+}
+
+.release-notes__category {
+  margin-bottom: 1.5rem;
+}
+
+.release-notes__category h3 {
+  color: #a5b4fc;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.release-notes__category ul {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+.release-notes__category li {
+  color: #e0e7ff;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.release-notes__category li::before {
+  content: "•";
+  position: absolute;
+  left: -1.5rem;
+  color: #f2e5a9;
+}
+
+.release-notes__category h4 {
+  color: #f2e5a9;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+.release-notes__category ul ul {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.release-notes__category strong {
+  color: #a5b4fc;
+}
+
+.release-notes a {
+  color: #f2e5a9;
+  text-decoration: none;
+}
+
+.release-notes a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .release-notes__version h2 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .release-date {
+    font-size: 0.9rem;
+  }
+}
+
+.report-issues p {
+  color: #e0e7ff;
+  margin-bottom: 1rem;
+}
+
+.report-issues ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.report-issues li {
+  margin-bottom: 0.5rem;
+}
+
+.report-issues li::before {
+  display: none;
 }
