@@ -195,10 +195,26 @@ em {
   color: #fff;
   padding: 2em;
   border-radius: 0.8em;
-
   position: relative;
   backdrop-filter: blur(4px);
   border: 1px solid #555;
+}
+
+.release-notes__version {
+  background: rgba(171, 171, 171, 0.1);
+  border-radius: 12px;
+  padding: 2rem 2rem 2rem 3.5rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(4px);
+  border: 1px solid #555;
+}
+
+.version-anchor {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  padding-left: 1.5em;
+  margin-left: -1.5em;
 }
 
 .ready:hover {
@@ -396,15 +412,6 @@ em {
   text-align: center;
 }
 
-.release-notes__version {
-  background: rgba(171, 171, 171, 0.1);
-  border-radius: 12px;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  backdrop-filter: blur(4px);
-  border: 1px solid #555;
-}
-
 .release-notes__version h2 {
   color: #f2e5a9;
   font-size: 1.5rem;
@@ -530,8 +537,14 @@ em {
 }
 
 @keyframes fadeOut {
-  0% { opacity: 1; transform: translateY(0); }
-  100% { opacity: 0; transform: translateY(-10px); }
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 }
 
 .copy-feedback {
